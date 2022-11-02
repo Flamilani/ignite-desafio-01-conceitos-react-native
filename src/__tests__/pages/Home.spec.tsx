@@ -31,8 +31,8 @@ describe('Home', () => {
     fireEvent.changeText(inputElement, 'Primeira tarefa');
     fireEvent(inputElement, 'submitEditing');
 
-    const buttonElement = getByTestId('button-0');
-    const markerElement = getByTestId('marker-0');
+    const buttonElement = getByTestId('button');
+    const markerElement = getByTestId('trash');
     
     const taskElement = getByText('Primeira tarefa');
 
